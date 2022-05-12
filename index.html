@@ -57,36 +57,9 @@
 							<section id="four">
 								<div class="container">
 									<h3>A Tutorial in R</h3>
-									<p>Here, we will show a tutorial how to implement differential in privacy, as well as an example application. </p>
-									<div>
- 									<h1>Step 1:</h1>
-									<p>First, in order to install the package we must first install 'devtools', and then install the package from github.</p>
-  									<script src="https://gist.github.com/kylafinlayson/07c200beb1681a62bec46b0655a4e881.js"></script>
+									<p>Here, we will show a tutorial of how to implement differential privacy in R. </p>
 									</div>
-									<div>
- 									<h1>Step 2:</h1>
-									<p>Next, we will want to create the function that we would like to determine using our private data. Suppose that we have a dataset with information about individuals' annual salaries and we would like to find the median annual salary. Since our desired output is numeric, we will use the Laplace mechanism.</p>
-  									<script src="https://gist.github.com/kylafinlayson/b5056df8644697d8eaa9e19e9a4dc800.js"></script>
-									</div>
-									<div>
- 									<h1>Step 3:</h1>
-									<p>Now, we set the dataset sampling distribution and estimate our target sensitivity.</p>
-  									<script src="https://gist.github.com/kylafinlayson/302c14ca033f170cca5888d903449cc2.js"></script>
-									</div>
-									<div>
- 									<h1>Step 4:</h1>
-									<p>Lastly, using the data we would like to find the median with, we release the private and non-private responses, where epsilon is the desired privacy level we would like.</p>
-  									<script src="https://gist.github.com/kylafinlayson/03d4da745813b0e6a0854c7545e29f03.js"></script>
-									</div>
-									<div>
- 									<h1>Step 5:</h1>
-									<p>Now, putting everything together we create the function for finding a differentially private median:</p>
-  									<script src="https://gist.github.com/kylafinlayson/2c9485a1880ab32f8eead2ad5d1c9ca8.js"></script>
-									</div>
-									<div>
- 									<h1>Epsilon vs. Percentage Error</h1>
-									<p>We may be curious how epsilon affects our outcome variable. So, we plot values of epsilon versus the percentage of error between our target and our differentially private response.</p>
-  									<script src="https://gist.github.com/kylafinlayson/3a14b98b14a90bd23c26dfd2fae0bd6e.js"></script>
+  									<script src="https://gist.github.com/kylafinlayson/99f0f46b0d61213ddddce68642d1faf8.js"></script>
 									</div>
 									</div>
 							</section>
