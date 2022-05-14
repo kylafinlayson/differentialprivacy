@@ -58,7 +58,7 @@
 									<img src="images/Laplace.jpg" width = "50" alt="" />
 									</div>
 									<div>
-									<p>Source: Stephanie. (2021, November 30). Laplace distribution / double exponential. Statistics How To. Retrieved May 14, 2022, from https://www.statisticshowto.com/laplace-distribution-double-exponential/</p>
+									<p style="font-size:9">Source: Stephanie. (2021, November 30). Laplace distribution / double exponential. Statistics How To. Retrieved May 14, 2022, from https://www.statisticshowto.com/laplace-distribution-double-exponential/</p>
 									</div>
 									<h3>Different Noise-Adding Mechanisms</h3>
 									<p>Although we have already mentioned the Laplace mechanism, there are a few other noise-adding mechanisms that can be used to implement differential privacy, including both the Exponential and Gaussian mechanism. In general, we use the Laplacian mechanism to add noise to our data when the outcome is numerical and we use the Exponential mechanism to add noise to our data when the outcome is not-numerical. Simply enough, the Laplace mechanism works by adding noise to the output of our function, where the noise follows a Laplacian distribution. The Exponential mechanism is a little bit more complicated, but essentially it draws an output from a probability distribution, without actually adding noise to any of our data. The figure belows outlines the mechanism a little more clearly:</p>
@@ -66,7 +66,7 @@
 									<img src="images/Exponential.png" height="100" alt="" />
 									</div>
 									<div>
-									<p>Source: Programming Differential Privacy. The Exponential Mechanism - Programming Differential Privacy. (n.d.). Retrieved May 14, 2022, from https://programming-dp.com/notebooks/ch9.html</p>
+									<p style="font-size:9">Source: Programming Differential Privacy. The Exponential Mechanism - Programming Differential Privacy. (n.d.). Retrieved May 14, 2022, from https://programming-dp.com/notebooks/ch9.html</p>
 									</div>
 									<p>The last commonly-used noise-adding mechanism is the Gaussian mechanism. Compared to both the Laplace and Exponential mechanisms, the Gaussian one is not very commonly used. It is used for numerical data and is very similar to the Laplacian distribution, the main difference being that the noise it adds is Gaussian and not Laplacian, which is useful for vector-value applications in which our L2 sensitivity is lower than our L1 sensitivity.</p>
 									<h3>Privacy Deterioration</h3>
@@ -75,7 +75,7 @@
 									<img src="images/queries.png" height="100" alt="" />
 									</div>
 									<div>
-									<p>Source: Georgian Impact Blog. (2021, March 8). A brief introduction to Differential Privacy. Medium. Retrieved May 14, 2022, from https://medium.com/georgian-impact-blog/a-brief-introduction-to-differential-privacy-eacf8722283b</p>
+									<p style="font-size:9">Source: Georgian Impact Blog. (2021, March 8). A brief introduction to Differential Privacy. Medium. Retrieved May 14, 2022, from https://medium.com/georgian-impact-blog/a-brief-introduction-to-differential-privacy-eacf8722283b</p>
 									</div
 									<p>The figure above displays a few simulations of repeated queries, where Within_one means that the differentially-private estimate is within 1 of the true target. As the number of queries increases, the approximation of the actual dataset becomes closer and closer to the real data that we have recorded. In the particular instance demonstrated by the plots above, it would only take 50 queries to gain a relatively accurate estimate of our real data. So, despite the fact that we have added random noise to our data to shield true individual responses, the fact is that if enough inquiries about our data, then the adversary will be able to approximate the true proportion of people who pick their nose in the car, regardless of the mechanisms we have placed to disguise that. We could potentially increase the variance of the noise that we add to our data, but even still the amount of noise that we add to our data must depend on the sensitivity of our function, which we will go over in the implementation of differential privacy in both R and Python.</p>
 								</div>
