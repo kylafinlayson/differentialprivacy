@@ -61,7 +61,7 @@
 									<h3>Different Noise-Adding Mechanisms</h3>
 									<p>Although we have already mentioned the Laplace mechanism, there are a few other noise-adding mechanisms that can be used to implement differential privacy, including both the Exponential and Gaussian mechanism. In general, we use the Laplacian mechanism to add noise to our data when the outcome is numerical and we use the Exponential mechanism to add noise to our data when the outcome is not-numerical. Simply enough, the Laplace mechanism works by adding noise to the output of our function, where the noise follows a Laplacian distribution. The Exponential mechanism is a little bit more complicated, but essentially it draws an output from a probability distribution, without actually adding noise to any of our data. The figure belows outlines the mechanism a little more clearly:</p>
 									<div class="image main" data-position="center">
-									<img src="images/Exponential.png" alt="" />
+									<img src="images/Exponential.png" height="100" alt="" />
 									<p>Source: Programming Differential Privacy. The Exponential Mechanism - Programming Differential Privacy. (n.d.). Retrieved May 14, 2022, from https://programming-dp.com/notebooks/ch9.html</p>
 									</div>
 									<p>The last commonly-used noise-adding mechanism is the Gaussian mechanism. Compared to both the Laplace and Exponential mechanisms, the Gaussian one is not very commonly used. It is used for numerical data and is very similar to the Laplacian distribution, the main difference being that the noise it adds is Gaussian and not Laplacian, which is useful for vector-value applications in which our L2 sensitivity is lower than our L1 sensitivity.</p>
@@ -69,7 +69,7 @@
 									<p>Lastly, we will go over the phenomenon of privacy deterioration– which is important to keep in mind when using differential privacy. If we are curious about the information a researcher would receive after querying our data, we would not be particularly worried. If a researcher were to make one query about our data and we provided them with our differentially private observations, there is a relatively small chance that said researcher would be able to infer anything about the individuals in our dataset. However, if a researcher were to make multiple or repeated queries in our data, we would begin to run into the limitations of differential privacy. In simple terms, as the number of queries increases, the greater the probability of our data/privacy being breached. This is one of the greatest limitations of differential privacy. As queries increase, the confidence interval that approximates the true target decreases, despite having random Laplacian noise added to each variable.</p>
 									<div class="image main" data-position="center">
 									<figure>
-									<img src="images/queries.png" alt="" />
+									<img src="images/queries.png" height="100" alt="" />
 									<figcaption>Source: Georgian Impact Blog. (2021, March 8). A brief introduction to Differential Privacy. Medium. Retrieved May 14, 2022, from https://medium.com/georgian-impact-blog/a-brief-introduction-to-differential-privacy-eacf8722283b</figcaption>
 									</figure>
 									</div>
